@@ -31,6 +31,7 @@ const DashboardLayout = () => {
                 <NavLink
                   key={index}
                   to={obj.link}
+                  onClick={() => setIsVisible(prev => !prev)}
                   className={` font-bold text-center py-2 cursor-pointer duration-300 flex items-center justify-start px-5 gap-4 ${
                     location.pathname === obj.link
                       ? "bg-white text-[#511BEA]"
